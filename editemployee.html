@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Edit Employee</h2>
+        <form id="editEmployeeForm">
+            <input type="hidden" id="editIndex" name="editIndex">
+            <label for="editName">Name:</label>
+            <input type="text" id="editName" name="editName" required>
+            <label for="editEmail">Email:</label>
+            <input type="email" id="editEmail" name="editEmail" required>
+            <label for="editMobile">Mobile No:</label>
+            <input type="text" id="editMobile" name="editMobile" required>
+            <label for="editDesignation">Designation:</label>
+            <input type="text" id="editDesignation" name="editDesignation" required>
+            <label for="editGender">Gender:</label>
+            <select id="editGender" name="editGender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="editCourse">Course:</label>
+            <input type="text" id="editCourse" name="editCourse" required>
+            <label for="editImg">Image:</label>
+            <input type="file" id="editImg" name="editImg" accept="image/*">
+            <button type="submit">Update Employee</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
